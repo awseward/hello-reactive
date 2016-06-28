@@ -1,9 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class App extends Component {
-  static propTypes = {};
+  static propTypes    = {};
   static defaultProps = {};
-  state = {};
+
+  state = {
+    things: [],
+  };
+
   render() {
     return (
       <div>
@@ -13,6 +17,9 @@ export default class App extends Component {
             Refresh
           </button>
         </h3>
+        <ul>
+          {state.things.map(thing => <li>TODO: thing</li>)}
+        </ul>
       </div>
     );
   }
