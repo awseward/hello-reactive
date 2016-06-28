@@ -9,6 +9,7 @@ export default class App extends Component {
   };
 
   render() {
+    const { things } = this.state;
     return (
       <div>
         <h3>
@@ -18,7 +19,7 @@ export default class App extends Component {
           </button>
         </h3>
         <ul>
-          {state.things.map(thing => <li>TODO: thing</li>)}
+          {things.map(thing => <li>TODO: thing</li>)}
         </ul>
       </div>
     );
