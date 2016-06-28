@@ -1,0 +1,29 @@
+{
+  "name": "hello-reactive",
+  "version": "1.0.0",
+  "description": "An intro to reactive streams / observables (https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awseward/hello-reactive.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/awseward/hello-reactive/issues"
+  },
+  "homepage": "https://github.com/awseward/hello-reactive#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "dev": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
