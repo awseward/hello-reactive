@@ -8,18 +8,28 @@ export default class App extends Component {
     things: [],
   };
 
-  render() {
-    const { things } = this.state;
+  _pushNewThing = () => {
+    // TODO: Actually go fetch a thing
+    this.setState({
+      things: this.state.things.concat(1),
+    });
+ };
+
+ render() {
     return (
       <div>
         <h3>
           List of Things
-          <button onClick={() => {}}>
-            Refresh
+          <button onClick={this._pushNewThing}>
+            Push
           </button>
         </h3>
         <ul>
-          {things.map(thing => <li>TODO: thing</li>)}
+          {
+            this.state.things.map((thing, index) =>
+              <li key={index}>TODO: thing</li>
+            )
+          }
         </ul>
       </div>
     );
